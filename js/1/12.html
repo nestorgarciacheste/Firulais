@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de tiempo de carga</title>
+  </head>
+  <body onLoad="mostrarTiempo()">
+    <h1>Esta es una página de prueba</h1>
+    <p>El tiempo de carga se mostrará en la barra de estado del navegador.</p>
+
+    <script>
+      function mostrarTiempo() {
+        let tiempoInicial = new Date().getTime();
+        window.addEventListener("load", function() {
+          let tiempoFinal = new Date().getTime();
+          let tiempoCarga = tiempoFinal - tiempoInicial;
+          window.status = "La página tardó " + tiempoCarga + " milisegundos en cargarse.";
+        });
+      }
+    </script>
+  </body>
+</html>

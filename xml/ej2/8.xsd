@@ -1,0 +1,36 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="recetas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="receta" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="xs:string"/>
+              <xs:element name="ingredientes" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="cantidad" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="pasos" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="texto" type="xs:string"/>
+                    <xs:element name="tiempo" type="xs:positiveInteger" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="dificultad" type="xs:string" use="required"/>
+            <xs:attribute name="calorias" type="xs:nonNegativeInteger" use="optional"/>
+            <xs:attribute name="personas" type="xs:positiveInteger" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

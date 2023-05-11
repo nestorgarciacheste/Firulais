@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<persona nacimiento="1980-10-20" clave="p1287" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/alumno/Documents/code/xml/ej2/6.xsd">
+<dni>73790952K</dni>
+<datos>
+<nombre orden="primero">Ana</nombre>
+<apellido orden="primero">Pastor</apellido>
+<peso>51.2</peso>
+</datos>
+<comentario>no bebe alcohol</comentario>
+</persona>

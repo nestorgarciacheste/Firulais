@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [
+  <!ELEMENT elementos (elemento*)>
+  <!ELEMENT elemento (a, (b* |c*), d+, e?)>
+  <!ELEMENT a EMPTY>
+  <!ELEMENT b EMPTY>
+  <!ELEMENT c EMPTY>
+  <!ELEMENT d EMPTY>
+  <!ELEMENT e EMPTY>
+]>
+<elementos>
+  <elemento>
+    <a />
+    <d />
+  </elemento>
+  <elemento>
+    <a />
+    <b />
+    <b />
+    <d />
+    <d />
+  </elemento>
+  <elemento>
+    <a />
+    <c />
+    <c />
+    <d />
+    <d />
+    <d />
+  </elemento>
+  <elemento>
+    <a />
+    <b />
+    <d />
+    <e />
+  </elemento>
+</elementos>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10 - Ventanas</title>
+    <script>
+      function abrirVentana() {
+        const nuevaVentana = window.open("", "", "width=400,height=300,scrollbars=yes,resizable=yes");
+        nuevaVentana.document.body.style.backgroundColor = "blue"; // Cambiar color de fondo
+        nuevaVentana.focus(); // Cambiar foco a la nueva ventana
+        nuevaVentana.document.write(`
+          <h1>Ventana emergente</h1>
+          <button onclick="window.close()">Cerrar ventana</button>
+        `);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="abrirVentana()">Abrir Ventana</button>
+  </body>
+</html>

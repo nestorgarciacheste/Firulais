@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mensajes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/alumno/Documents/code/xml/ej2/4.xsd">
+  <mensaje>
+    <telefono>123456789</telefono>
+    <fecha>2023-02-27</fecha>
+    <hora>14</hora>
+    <texto>Hola, ¿cómo estás?</texto>
+    <estado>no leído</estado>
+  </mensaje>
+  <mensaje>
+    <telefono>987654321</telefono>
+    <fecha>2023-02-27</fecha>
+    <hora>10</hora>
+    <texto>¡Feliz cumpleaños!</texto>
+    <estado>leído</estado>
+    <spam></spam>
+  </mensaje>
+</mensajes>

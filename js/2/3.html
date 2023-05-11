@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <button type="button" onclick="verMisDatos()">Ver mis datos</button>
+    </form>
+
+    <script>
+        function verMisDatos() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var browser = navigator.userAgent;
+            var platform = navigator.platform;
+            var supportsJS = "Si";
+
+            if (typeof navigator.javaEnabled !== "undefined" && navigator.javaEnabled()) {
+                supportsJS = "Si";
+            } else {
+                supportsJS = "No";
+            }
+
+            var datos = "Nombre: " + name + "\nCorreo electrónico: " + email + "\nNavegador: " + browser + "\nPlataforma: " + platform + "\nSoporta JavaScript: " + supportsJS;
+
+            alert(datos);
+        }
+
+    </script>
+</body>
+
+</html>

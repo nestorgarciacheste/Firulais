@@ -1,0 +1,41 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="jugadores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="jugador" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="edad" type="xs:positiveInteger"/>
+              <xs:element name="nacionalidad" type="xs:string"/>
+              <xs:element name="apodo" type="xs:string" minOccurs="0"/>
+              <xs:element name="posicion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="portero"/>
+                    <xs:enumeration value="defensa"/>
+                    <xs:enumeration value="medio campo"/>
+                    <xs:enumeration value="delantero"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="equipo" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="lesionado" type="xs:boolean" default="false"/>
+          </xs:complexType>
+          <xs:key name="jugadorKey">
+            <xs:selector xpath="jugador"/>
+            <xs:field xpath="nombre"/>
+          </xs:key>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns="http://ejemplo.com/alumnos"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://ejemplo.com/alumnos file:/C:/Users/alumno/Documents/code/xml/ej2/2.xsd">
+<alumno>
+<nia>22234</nia>
+<nombre>Elena</nombre>
+<apellido1>Martos</apellido1>
+<apellido2>Zamora</apellido2>
+<dni>23486572D</dni>
+<nacimiento>2002-10-07</nacimiento>
+<nacionalidad>española</nacionalidad>
+<curso>DAM1</curso>
+<modulo>prog</modulo>
+<modulo>si</modulo>
+<modulo>bd</modulo>
+<modulo>lmsgi</modulo>
+<notaMedia>5.5</notaMedia>
+</alumno>
+<alumno>
+<nia>29234</nia>
+<nombre>Yuri</nombre>
+<apellido1>Velosky</apellido1>
+<dni>22983049D</dni>
+<nacimiento>2003-05-05</nacimiento>
+<nacionalidad>ucraniana</nacionalidad>
+<curso>DAM1</curso>
+<modulo>prog</modulo>
+<modulo>bd</modulo>
+<notaMedia>6.23</notaMedia>
+</alumno>
+<alumno>
+<nia>27634</nia>
+<nombre>Carlos</nombre>
+<nombre2>Felipe</nombre2>
+<apellido1>Sancho</apellido1>
+<apellido2>Lita</apellido2>
+<dni>23723472D</dni>
+<nacimiento>1999-09-14</nacimiento>
+<nacionalidad>española</nacionalidad>
+<curso>DAM1</curso>
+<modulo>prog</modulo>
+<modulo>si</modulo>
+<modulo>bd</modulo>
+<modulo>lmsgi</modulo>
+<notaMedia>7.15</notaMedia>
+</alumno>
+</alumnos>

@@ -1,0 +1,45 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="persona" type="personaType"/>
+
+  <xs:complexType name="personaType">
+    <xs:sequence>
+      <xs:element name="dni" type="dniType"/>
+      <xs:element name="datos" type="datosType"/>
+      <xs:element name="comentario" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="nacimiento" type="xs:date"/>
+    <xs:attribute name="clave" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="datosType">
+    <xs:sequence>
+      <xs:element name="nombre" maxOccurs="2">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="orden" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="apellido" maxOccurs="2">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="orden" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="peso" type="xs:decimal" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="dniType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{8}[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

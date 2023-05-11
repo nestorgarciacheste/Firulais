@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE jugadores [
+  <!ELEMENT jugadores (jugador+)>
+  <!ELEMENT jugador (nombre, email?, equipo)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT equipo (#PCDATA)>
+  <!ATTLIST jugador sexo (hombre|mujer) #REQUIRED
+                  nacionalidad CDATA #IMPLIED>
+  <!ATTLIST nombre apodo CDATA #IMPLIED>
+  <!ATTLIST equipo país CDATA "España">
+]>
+<jugadores>
+  <jugador sexo="hombre" nacionalidad="argentina">
+    <nombre apodo="La Pulga">Leo Messi</nombre>
+    <email>LeoMessi@fcbarna.com</email>
+    <email>argentina_LeoMessi@afa.com</email>
+    <equipo país="España">FC Barcelona</equipo>
+  </jugador>
+  <jugador sexo="hombre" nacionalidad="portuguesa">
+    <nombre>Cristiano Ronaldo</nombre>
+    <email>CR7@juventusfc.com</email>
+    <equipo>Juventus</equipo>
+  </jugador>
+  <jugador sexo="mujer" nacionalidad="española">
+    <nombre>Vero Boquete</nombre>
+    <email>vero.boquete@manchestercity.com</email>
+    <equipo país="Inglaterra">Manchester City</equipo>
+  </jugador>
+</jugadores>
+

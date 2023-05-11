@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE documento [
+<!ELEMENT documento (título, subtítulo?, párrafos, imágenes?)>
+<!ELEMENT título (#PCDATA)>
+<!ELEMENT subtítulo (#PCDATA)>
+<!ELEMENT párrafos (párrafo+)>
+<!ELEMENT párrafo (#PCDATA)>
+<!ELEMENT imágenes (imagen*)>
+<!ELEMENT imagen EMPTY>
+]>
+
+<documento>
+  <título>Mi Documento</título>
+  <subtítulo>Subtítulo opcional</subtítulo>
+  <párrafos>
+    <párrafo>Primer párrafo</párrafo>
+    <párrafo>Segundo párrafo</párrafo>
+  </párrafos>
+  <imágenes>
+    <imagen />
+  </imágenes>
+</documento>

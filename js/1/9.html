@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let contador = 100;
+        const intervalId = setInterval(() => {
+            window.status = contador;
+
+            if (contador === 0) {
+                clearInterval(intervalId); // Detener intervalo
+                const nuevaVentana = window.open("", "", "width=300,height=200");
+                nuevaVentana.document.write("<h1>BOOM</h1>");
+            }
+
+            contador--;
+        }, 1000);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

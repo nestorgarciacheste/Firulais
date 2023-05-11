@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<jugadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/alumno/Documents/code/xml/ej2/7.xsd">
+  <jugador lesionado="false">
+    <nombre>Lionel Messi</nombre>
+    <edad>34</edad>
+    <nacionalidad>Argentina</nacionalidad>
+    <posicion>delantero</posicion>
+    <email>lionel.messi@gmail.com</email>
+    <email>lionel.messi@fcbarcelona.es</email>
+    <equipo>FC Barcelona</equipo>
+  </jugador>
+  <jugador lesionado="true">
+    <nombre>Jan Oblak</nombre>
+    <edad>29</edad>
+    <nacionalidad>Eslovenia</nacionalidad>
+    <apodo>The Wall</apodo>
+    <posicion>portero</posicion>
+    <email>jan.oblak@atleticodemadrid.com</email>
+    <email>oblak@yahoo.com</email>
+    <equipo>Atlético de Madrid</equipo>
+  </jugador>
+</jugadores>

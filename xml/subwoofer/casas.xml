@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE casas [
+  <!ELEMENT casas (casa*)>
+  <!ELEMENT casa (dirección, superficie, habitantes?)>
+  <!ELEMENT dirección (#PCDATA)>
+  <!ELEMENT superficie (#PCDATA)>
+  <!ATTLIST superficie
+    unidad CDATA "metro">
+  <!ELEMENT habitantes (persona*)>
+  <!ELEMENT persona EMPTY>
+  <!ATTLIST persona
+    nombre CDATA #REQUIRED
+    edad CDATA #IMPLIED>
+]>
+<casas>
+  <casa>
+    <dirección>C/ Donat 12 Castellón</dirección>
+    <superficie>112</superficie>
+    <habitantes>
+      <persona nombre="Pepe Ramos" edad="32"/>
+      <persona nombre="Julia Martínez" edad="28"/>
+    </habitantes>
+  </casa>
+  <casa>
+    <dirección>C/ La Palma 12 Barcelona</dirección>
+    <superficie>120</superficie>
+    <habitantes>
+      <persona nombre="Juan Pérez" edad="29"/>
+      <persona nombre="Ana García" edad="31"/>
+    </habitantes>
+  </casa>
+  <casa>
+    <dirección>C/ Las Rosas 12 Madrid</dirección>
+    <superficie>150</superficie>
+  </casa>
+</casas>

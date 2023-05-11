@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+
+</head>
+
+<body>
+    <h1 id="n">Cadena</h1>
+    <script>
+        let cadena = "Hola mundo!";
+        document.write(cadena.big(), "<br>");
+        document.write(cadena.blink(), "<br>");
+        document.write(cadena.bold(), "<br>");
+        document.write(cadena.charAt(5), "<br>");
+        document.write(cadena.fixed(), "<br>");
+        document.write(cadena.fontcolor("red"), "<br>");
+        document.write(cadena.fontsize(1), "<br>");
+        document.write(cadena.fontsize(7), "<br>");
+        document.write(cadena.indexOf("m"), "<br>");
+        document.write(cadena.italics(), "<br>");
+        document.write(cadena.lastIndexOf("o"), "<br>");
+        document.write(cadena.link("https://www.example.com"), "<br>");
+        document.write(cadena.small(), "<br>");
+        document.write(cadena.strike(), "<br>");
+        document.write(cadena.sub(), "<br>");
+        document.write(cadena.sup(), "<br>");
+        document.write(cadena.toLowerCase(), "<br>");
+        document.write(cadena.toUpperCase(), "<br>");
+        document.write(cadena.length, "<br>");
+
+        let n = -3;
+        let x = 10;
+        let y = 15;
+
+        document.write("<br><br><h1>Números</h1>")
+
+        document.write("Valor absoluto de " + n + ": " + Math.abs(n) + "<br>");
+        document.write("Arco coseno de 0.5: " + Math.acos(0.5) + "<br>");
+        document.write("Arco seno de 0.5: " + Math.asin(0.5) + "<br>");
+        document.write("Arco tangente de 1: " + Math.atan(1) + "<br>");
+        document.write("Redondeo superior de " + n + ": " + Math.ceil(n) + "<br>");
+        document.write("Coseno de " + n + ": " + Math.cos(n) + "<br>");
+        document.write("e elevado a " + n + ": " + Math.exp(n) + "<br>");
+        document.write("Redondeo inferior de " + n + ": " + Math.floor(n) + "<br>");
+        document.write("Logaritmo natural de " + x + ": " + Math.log(x) + "<br>");
+        document.write("Valor máximo entre " + x + " y " + y + ": " + Math.max(x, y) + "<br>");
+        document.write("Valor mínimo entre " + x + " y " + y + ": " + Math.min(x, y) + "<br>");
+        document.write(x + " elevado a " + y + ": " + Math.pow(x, y) + "<br>");
+        document.write("Número aleatorio entre 0 y 1: " + Math.random() + "<br>");
+        document.write("Redondeo de " + n + " al número más cercano: " + Math.round(n) + "<br>");
+        document.write("Seno de " + n + ": " + Math.sin(n) + "<br>");
+        document.write("Raíz cuadrada de " + x + ": " + Math.sqrt(x) + "<br>");
+        document.write("Tangente de " + n + ": " + Math.tan(n) + "<br>");
+        document.write("Constante de Euler (e): " + Math.E + "<br>");
+        document.write("Logaritmo neperiano de 2: " + Math.LN2 + "<br>");
+        document.write("Logaritmo neperiano de 10: " + Math.LN10 + "<br>");
+        document.write("Logaritmo en base 2 de e: " + Math.LOG2E + "<br>");
+        document.write("Logaritmo en base 10 de e: " + Math.LOG10E + "<br>");
+        document.write("Número PI: " + Math.PI + "<br>");
+        document.write("Raíz cuadrada de 0.5: " + Math.SQRT1_2 + "<br>");
+        document.write("Raíz cuadrada de 2: " + Math.SQRT2 + "<br>");
+
+
+        let fecha = new Date();
+        document.write("Día del mes: " + fecha.getDate());
+        document.write("Día de la semana: " + fecha.getDay());
+        document.write("Año: " + fecha.getFullYear());
+        document.write("Hora: " + fecha.getHours());
+        document.write("Minutos: " + fecha.getMinutes());
+        document.write("Mes: " + fecha.getMonth());
+        document.write("Segundos: " + fecha.getSeconds());
+        document.write("Milisegundos: " + fecha.getTime());
+        document.write("Diferencia de zona horaria: " + fecha.getTimezoneOffset() + " minutos");
+        document.write("Fecha en formato de texto: " + fecha.toLocaleString());
+
+    </script>
+    
+</body>
+
+</html>

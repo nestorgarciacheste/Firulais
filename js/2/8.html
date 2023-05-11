@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabla de colores</title>
+    <script>
+      function cambiaColor(color) {
+        document.body.style.backgroundColor = color;
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td onmouseover="cambiaColor('red')" onmouseout="cambiaColor('white')">Rojo</td>
+        <td onmouseover="cambiaColor('blue')" onmouseout="cambiaColor('white')">Azul</td>
+        <td onmouseover="cambiaColor('green')" onmouseout="cambiaColor('white')">Verde</td>
+      </tr>
+      <tr>
+        <td onmouseover="cambiaColor('yellow')" onmouseout="cambiaColor('white')">Amarillo</td>
+        <td onmouseover="cambiaColor('purple')" onmouseout="cambiaColor('white')">Morao</td>
+        <td onmouseover="cambiaColor('orange')" onmouseout="cambiaColor('white')">Naranja</td>
+      </tr>
+    </table>
+  </body>
+</html>

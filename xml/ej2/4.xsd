@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- Definición del tipo para el número de teléfono -->
+  <xs:simpleType name="telefono">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Definición del tipo para la fecha -->
+  <xs:simpleType name="fecha">
+    <xs:restriction base="xs:date"/>
+  </xs:simpleType>
+  
+  <!-- Definición del tipo para la hora -->
+  <xs:simpleType name="hora">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="23"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Definición del tipo para el texto del mensaje -->
+  <xs:simpleType name="texto">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="140"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Definición del tipo para el estado -->
+  <xs:simpleType name="estado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="leído"/>
+      <xs:enumeration value="no leído"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Definición del tipo para el spam -->
+  <xs:simpleType name="spam">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Definición del elemento para el mensaje corto -->
+  <xs:element name="mensaje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="telefono" type="telefono"/>
+        <xs:element name="fecha" type="fecha"/>
+        <xs:element name="hora" type="hora"/>
+        <xs:element name="texto" type="texto"/>
+        <xs:element name="estado" type="estado"/>
+        <xs:element name="spam" type="spam" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Definición del elemento raíz -->
+  <xs:element name="mensajes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="mensaje" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

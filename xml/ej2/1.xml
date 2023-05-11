@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\alumno\Documents\code\xml\ej2\1.xsd">
+    <alumno numAsig="5" nota="3.2" calificación="Deficiente" codCentro="46010022" nomCurs="DAM1" dni="12457895-K" procedencia="prueba" notasCurso="3.3 6.5 4.2" evaluación="4.3"/>
+    <alumno numAsig="3" nota="6.2" calificación="Bien" codCentro="46012589" nomCurs="DAM1" dni="12240047-D" procedencia="ciclo medio" notasCurso="6.3 6.5 5.2 " evaluación="3.4" promociona="true"/>
+    <alumno numAsig="3" nota="2.2" calificación="Muy deficiente" codCentro="46012589" nomCurs="DAM1" dni="74839923-H" procedencia="bachillerato" notasCurso="1.3 4.5 3.2" evaluación="3"/>
+</alumnos>

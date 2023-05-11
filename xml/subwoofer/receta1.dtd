@@ -1,0 +1,5 @@
+<!ELEMENT receta (título, dificultad, ingrediente+, paso+)>
+<!ELEMENT título (#PCDATA)>
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ELEMENT paso (#PCDATA)>

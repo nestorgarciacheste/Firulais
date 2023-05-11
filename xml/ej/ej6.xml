@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<libros>
+  <libro id="lib1">
+    <titulo>El Quijote</titulo>
+    <autor apellido="Cervantes" nombre="Saavedra">
+      <descripcion>Es el mejor libro de Cervantes.</descripcion>
+    </autor>
+  </libro>
+</libros>
+
+<libros>
+  <libro id="lib2">
+    <titulo>Los Santos Inocentes</titulo>
+    <autor nombre="Miguel Delibes">
+      <descripcion>Retrato de la "España profunda". Existe una película basada en el libro.</descripcion>
+    </autor>
+  </libro>
+</libros>

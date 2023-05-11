@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+
+</head>
+
+<body>
+    <h1 id="n">Nota</h1>
+    <h2 id="nota"></h2>
+    <script>
+        let nota = parseInt(prompt("Ingrese su nota:"));
+        califi(nota);
+        function califi(nota) {
+            document.getElementById("n").innerHTML = nota;
+            if (nota >= 9) {
+                document.getElementById("nota").innerHTML = "Sobresaliente";
+            } else if (nota <= 7) {
+                document.getElementById("nota").innerHTML = "Notable";
+            } else if (nota <= 6) {
+                document.getElementById("nota").innerHTML = "Bien";
+            } else if (nota <= 5) {
+                document.getElementById("nota").innerHTML = "Suficiente";
+            } else {
+                document.getElementById("nota").innerHTML = "Insuficiente";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/alumno/Documents/code/xml/ej2/8.xsd">
+  <receta dificultad="fácil" calorias="400" personas="4">
+    <titulo>Tortilla de patatas</titulo>
+    <ingredientes>
+      <nombre>patatas</nombre>
+      <cantidad>4</cantidad>
+    </ingredientes>
+    <ingredientes>
+      <nombre>cebolla</nombre>
+      <cantidad>1</cantidad>
+    </ingredientes>
+    <ingredientes>
+      <nombre>huevos</nombre>
+      <cantidad>6</cantidad>
+    </ingredientes>
+    <pasos>
+      <texto>Pelar y cortar las patatas y la cebolla en rodajas finas.</texto>
+    </pasos>
+    <pasos>
+      <texto>Freír las patatas y la cebolla en una sartén hasta que estén doradas.</texto>
+      <tiempo>10</tiempo>
+    </pasos>
+    <pasos>
+      <texto>Batir los huevos en un bol y añadir las patatas y la cebolla fritas.</texto>
+    </pasos>
+  </receta>
+  
+  <receta dificultad="media" personas="2">
+    <titulo>Ensalada César</titulo>
+    <ingredientes>
+      <nombre>lechuga</nombre>
+      <cantidad>1</cantidad>
+    </ingredientes>
+    <ingredientes>
+      <nombre>pollo</nombre>
+      <cantidad>200 gramos</cantidad>
+    </ingredientes>
+    <ingredientes>
+      <nombre>crutones</nombre>
+      <cantidad>50 gramos</cantidad>
+    </ingredientes>
+    <ingredientes>
+      <nombre>queso parmesano</nombre>
+      <cantidad>50 gramos</cantidad>
+    </ingredientes>
+    <pasos>
+      <texto>Lavar la lechuga y cortarla en trozos pequeños.</texto>
+    </pasos>
+    <pasos>
+      <texto>Cortar el pollo en trozos y cocinarlo en una sartén con un poco de aceite.</texto>
+      <tiempo>15</tiempo>
+    </pasos>
+    <pasos>
+      <texto>Añadir los crutones y el queso parmesano a la lechuga y mezclar todo.</texto>
+    </pasos>
+    <pasos>
+      <texto>Añadir el pollo a la ensalada y mezclar bien.</texto>
+    </pasos>
+  </receta>
+  
+</recetas>

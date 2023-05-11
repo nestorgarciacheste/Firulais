@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<notas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/alumno/Documents/code/xml/ej2/3.xsd">
+<nota>
+<de>Abuelo</de> <para>Pedro</para>
+<titulo>Recordatorio</titulo>
+<contenido>Recoger las cabras del establo</contenido>
+</nota>
+<nota>
+<de>Pedro</de> <para>Heidi</para> <para>Klara</para> <para>Tinette</para>
+<titulo>Aviso</titulo>
+<contenido>Trae bocatas</contenido>
+</nota>
+<nota>
+<parami>Pedro</parami>
+<titulo>Recordatorio</titulo>
+<contenido>Cambiar la paja</contenido>
+</nota>
+</notas>

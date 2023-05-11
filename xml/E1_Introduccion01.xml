@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<alumno>
+    <NIA> 55128 </NIA>
+    <nombre> 
+        <nombreAlumno> Juan Antonio </nombreAlumno>
+        <apellidos> 
+            <primerApellido> García-Pardo </primerApellido>
+            <segundoApellido> Chaparro </segundoApellido> 
+        </apellidos>
+    </nombre>
+    <direccion>
+        <nombreCalle> Quatre Cantons </nombreCalle>
+        <numeroCasa> nº15 </numeroCasa>
+        <codigoPostal> 46190 </codigoPostal>
+        <municipio> Riba-roja </municipio>
+    </direccion>
+    <edad> 18 </edad>
+    <sexo> H </sexo>
+    <idiomas> 
+        <idioma>  Castellano </idioma> Valenciano  
+        <idioma>  Valenciano </idioma> 
+        <idioma>  Inglés </idioma> 
+    </idiomas>
+</alumno>

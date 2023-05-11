@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="alumnos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="alumno" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- El DNI tiene 8 dígitos, un guion y una letra mayúscula (patrón), es un texto -->
+  <xs:simpleType name="dniTipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{8}-[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- La procedencia "bachillerato", "ciclo medio" o "prueba" (patrón), es un texto -->
+  <xs:simpleType name="procedenciaTipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="bachillerato|ciclo medio|prueba"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- La nota numérica está entre 0 y 10, es un número con decimales -->
+  <xs:simpleType name="notaTipo">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- El código del centro tiene una longitud de 8 dígitos, es un entero positivo -->
+  <xs:simpleType name="codCentroTipo">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:totalDigits value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- El nombre del curso de al menos 3 caracteres y 8 como máximo, es un texto -->
+  <xs:simpleType name="nomCursTipo">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3"/>
+      <xs:maxLength value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Las notas de un curso, es una lista de notas numéricas -->
+  <xs:simpleType name="notasCursoTipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([0-9].[0-9]\s?)*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- La evaluación es nota numérica decimal -->
+  <xs:simpleType name="evaluacionTipo">
+    <xs:restriction base="xs:decimal">
+        </xs:restriction>
+  </xs:simpleType>
+  <!-- La calificación es "Sobresaliente", "Notable", "Bien", "Suficiente", "Deficiente", "Muy deficiente", es un texto -->
+  <xs:simpleType name="calificacionTipo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Sobresaliente"/>
+      <xs:enumeration value="Notable"/>
+      <xs:enumeration value="Bien"/>
+      <xs:enumeration value="Suficiente"/>
+      <xs:enumeration value="Deficiente"/>
+      <xs:enumeration value="Muy deficiente"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- El número de asignaturas que cursa es 1 como mínimo (obligatorio), es un entero -->
+  <xs:simpleType name="numAsigTipo">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="alumno">
+    <xs:complexType>
+      <!-- aquí se definen los atributos -->
+      <xs:attribute name="calificación" type="calificacionTipo" use="required"/>
+      <xs:attribute name="codCentro" type="codCentroTipo" use="required"/>
+      <xs:attribute name="dni" type="dniTipo" use="required"/>
+      <xs:attribute name="evaluación" type="evaluacionTipo" use="required"/>
+      <xs:attribute name="nomCurs" type="nomCursTipo" use="required"/>
+      <xs:attribute name="nota" type="notaTipo" use="required"/>
+      <xs:attribute name="notasCurso" type="notasCursoTipo" use="required"/>
+      <xs:attribute name="numAsig" type="numAsigTipo" use="required"/>
+      <xs:attribute name="procedencia" type="procedenciaTipo" use="required"/>
+      <xs:attribute name="promociona" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Nombre:
+          <input type="text" name="nombre">
+        </label>
+        <br>
+        <label>Menú:
+          <select name="menu">
+            <option value="menu1">Menú 1</option>
+            <option value="menu2">Menú 2</option>
+            <option value="menu3">Menú 3</option>
+          </select>
+        </label>
+        <br>
+        <label>Entrante:
+          <input type="radio" name="entrante" value="ensalada">Ensalada
+          <input type="radio" name="entrante" value="sopa">Sopa
+          <input type="radio" name="entrante" value="croquetas">Croquetas
+        </label>
+        <br>
+        <label>Plato principal:
+          <input type="checkbox" name="plato" value="carne">Carne
+          <input type="checkbox" name="plato" value="pescado">Pescado
+          <input type="checkbox" name="plato" value="vegetariano">Vegetariano
+        </label>
+        <br>
+        <label>Bebida:
+          <select name="bebida">
+            <option value="agua">Agua</option>
+            <option value="refresco">Refresco</option>
+            <option value="cerveza">Cerveza</option>
+          </select>
+        </label>
+        <br>
+        <label>Comentarios:
+          <textarea name="comentarios"></textarea>
+        </label>
+        <br>
+        <button type="submit">Enviar pedido</button>
+      </form>
+
+      <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+          const menu = form.menu.value;
+          alert(`Ha elegido el menú ${menu}`);
+        });
+      </script>
+      
+</body>
+</html>

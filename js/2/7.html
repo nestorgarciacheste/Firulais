@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 7</title>
+	<script>
+		function checkBirthday() {
+			var bday = document.getElementById("birthday").value;
+			var today = new Date();
+			var bdayDate = new Date(bday);
+			var diff = today - bdayDate;
+			var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+			if (days % 365 == 0) {
+				alert("¡Feliz cumpleaños!");
+				var audio = new Audio('cumpleanos_feliz.mp3');
+				audio.play();
+			}
+		}
+	</script>
+	<style type="text/css">
+		body {
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="name">Nombre:</label>
+		<input type="text" id="name" name="name"><br>
+
+		<label for="last_name">Apellidos:</label>
+		<input type="text" id="last_name" name="last_name"><br>
+
+		<label for="birthday">Fecha de nacimiento:</label>
+		<input type="date" id="birthday" name="birthday" onchange="checkBirthday()"><br>
+
+		<label for="residence">País de residencia:</label>
+		<select id="residence" name="residence">
+			<option value="España">España</option>
+			<option value="Francia">Francia</option>
+			<option value="Italia">Italia</option>
+			<option value="Alemania">Alemania</option>
+			<option value="Reino Unido">Reino Unido</option>
+			<option value="Estados Unidos">Estados Unidos</option>
+			<option value="Canadá">Canadá</option>
+			<option value="México">México</option>
+			<option value="Argentina">Argentina</option>
+			<option value="Brasil">Brasil</option>
+			<option value="Colombia">Colombia</option>
+			<option value="Perú">Perú</option>
+			<option value="Chile">Chile</option>
+			<option value="Uruguay">Uruguay</option>
+			<option value="Paraguay">Paraguay</option>
+		</select><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

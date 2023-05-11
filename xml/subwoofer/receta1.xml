@@ -1,0 +1,13 @@
+﻿<!DOCTYPE receta SYSTEM "receta1.dtd">
+<receta>
+  <título>Paella</título>
+  <dificultad>media</dificultad>
+  <ingrediente>arroz</ingrediente>
+  <ingrediente>verdura</ingrediente>
+  <ingrediente>carne</ingrediente>
+  <paso>freir la carne</paso>
+  <paso>añadir la verdura</paso>
+  <paso>cocer la verdura y la carne</paso>
+  <paso>añadir el arroz</paso>
+  <paso>cocer el arroz 18 minutos</paso>
+</receta>

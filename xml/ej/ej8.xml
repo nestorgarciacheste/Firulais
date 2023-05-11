@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<hechosHistoricos>
+  <hecho descripcion="IBM da a conocer el PC">
+    <fecha dia="12" mes="8" año="1981"/>
+  </hecho>
+  <hecho descripcion="Se funda Google">
+    <fecha dia="4" mes="9" año="1998"/>
+  </hecho>
+  <hecho descripcion="Se funda Facebook">
+    <fecha dia="4" mes="2" año="2004"/>
+  </hecho>
+  <hecho descripcion="Examen de LMSGI">
+    <fecha dia="27" mes="2" año="2020"/>
+  </hecho>
+</hechosHistoricos>

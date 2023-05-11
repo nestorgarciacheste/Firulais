@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE noticia [
+  <!ELEMENT noticia (titulo, texto)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT texto (#PCDATA)>
+  <!ENTITY pi "3.1416">
+  <!ENTITY ovni "Objecto Volador No Identificado">
+]>
+
+<noticia>
+  <titulo>Aterrizaje de un &ovni; en Buñol</titulo>
+  <texto>La superficie de un &ovni; es igual a &pi; por el radio del ovni al cuadrado</texto>
+</noticia>

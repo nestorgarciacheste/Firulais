@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<peliculas>
+  <pelicula>
+    <nombre>The Shawshank Redemption</nombre>
+    <genero>Drama</genero>
+    <director>Frank Darabont</director>
+    <actores>
+      <actor nombre="Andy Dufresne" vidaReal="Tim Robbins"/>
+      <actor nombre="Ellis Boyd 'Red' Redding" vidaReal="Morgan Freeman"/>
+    </actores>
+    <estreno año="1994" pais="USA"/>
+  </pelicula>
+  <pelicula>
+    <nombre>Pulp Fiction</nombre>
+    <genero>Thriller</genero>
+    <director>Quentin Tarantino</director>
+    <actores>
+      <actor nombre="Jules Winnfield" vidaReal="Samuel L. Jackson"/>
+      <actor nombre="Vincent Vega" vidaReal="John Travolta"/>
+    </actores>
+    <estreno año="1994" pais="USA"/>
+  </pelicula>
+</peliculas>

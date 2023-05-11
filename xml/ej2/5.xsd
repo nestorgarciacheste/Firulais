@@ -1,0 +1,21 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="alumnos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumno" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="amigos" type="xs:string" use="optional" />
+            <xs:attribute name="NIA" type="xs:string" use="required" />
+            <xs:attribute name="numAsig" type="xs:positiveInteger" use="required" />
+            <xs:attribute name="nacionalidad" type="xs:string" use="optional" default="Española" />
+            <xs:attribute name="religión" type="xs:boolean" use="optional" default="false" />
+            <xs:attribute name="sexo" type="xs:string" use="optional" default="H" />
+            <xs:attribute name="tipoCurso" type="xs:string" use="optional" default="presencial" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

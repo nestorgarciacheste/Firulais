@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<carta>
+  <plato nombre="Arroz con pollo" vegano="no" picante="2">
+    <descripcion>Arroz con pollo sazonado y acompañado de verduras frescas</descripcion>
+    <precio moneda="USD">12.00</precio>
+    <calorias>400</calorias>
+  </plato>
+  <plato nombre="Tofu stir-fry" vegano="si" picante="1">
+    <descripcion>Tofu salteado con verduras y arroz integral</descripcion>
+    <precio moneda="USD">10.00</precio>
+    <calorias>300</calorias>
+  </plato>
+</carta>

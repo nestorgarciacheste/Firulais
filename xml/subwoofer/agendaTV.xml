@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agendaTV [
+  <!ELEMENT agendaTV (canal*)>
+  <!ELEMENT canal (día*)>
+  <!ATTLIST canal nombre CDATA #REQUIRED>
+  <!ELEMENT día (bloqueo | programa)>
+  <!ATTLIST día fecha CDATA #REQUIRED>
+  <!ELEMENT bloqueo (#PCDATA)>
+  <!ELEMENT programa (título, descripción)>
+  <!ELEMENT título (#PCDATA)>
+  <!ELEMENT descripción (#PCDATA)>
+]>
+<agendaTV>
+  <canal nombre="laprimera">
+    <día fecha="31/12/2019">
+      <bloqueo>se comen las uvas</bloqueo>
+    </día>
+    <día fecha="1/1/2020">
+      <programa>
+        <título>Concierto de año nuevo</título>
+        <descripción>música clásica</descripción>
+      </programa>
+    </día>
+  </canal>
+  <canal nombre="la5">
+  </canal>
+</agendaTV>

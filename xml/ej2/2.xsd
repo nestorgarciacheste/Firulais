@@ -1,0 +1,30 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://ejemplo.com/alumnos"
+           xmlns="http://ejemplo.com/alumnos"
+           elementFormDefault="qualified">
+  
+  <xs:element name="alumnos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumno" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nia" type="xs:integer"/>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="nombre2" type="xs:string" minOccurs="0"/>
+              <xs:element name="apellido1" type="xs:string"/>
+              <xs:element name="apellido2" type="xs:string" minOccurs="0"/>
+              <xs:element name="dni" type="xs:string"/>
+              <xs:element name="nacimiento" type="xs:date"/>
+              <xs:element name="nacionalidad" type="xs:string"/>
+              <xs:element name="curso" type="xs:string"/>
+              <xs:element name="modulo" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="notaMedia" type="xs:decimal"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

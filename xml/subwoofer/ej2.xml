@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE articulos [
+  <!ELEMENT articulos (articulo*)>
+  <!ELEMENT articulo (nombre, precio)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+]>
+
+<articulos>
+  <articulo>
+    <nombre>Sofá</nombre>
+    <precio>649</precio>
+  </articulo>
+  <articulo>
+    <nombre>Mesa</nombre>
+    <precio>298</precio>
+  </articulo>
+  <articulo>
+    <nombre>Lámpara</nombre>
+    <precio>119</precio>
+  </articulo>
+  <articulo>
+    <nombre>Silla</nombre>
+    <precio>49</precio>
+  </articulo>
+</articulos>
